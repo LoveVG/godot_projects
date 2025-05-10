@@ -1,4 +1,3 @@
-"""
 MIT License
 
 Copyright (c) 2025 Games with Love
@@ -23,4 +22,3 @@ THE SOFTWARE.
 
 NOTE: This file is provided for testing and development purposes only.
 It is not production-ready and may contain unfinished or placeholder logic.
-"""
