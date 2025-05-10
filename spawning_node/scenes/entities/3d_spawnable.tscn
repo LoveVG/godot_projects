@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://dnxqwbow6iogl"]
+
+[ext_resource type="Texture2D" uid="uid://d2ekphqndboix" path="res://icon.svg" id="1_1vwsy"]
+[ext_resource type="Script" uid="uid://c4muhj7umxkoe" path="res://scripts/testing/auto_delete.gd" id="1_j482c"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vclfv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j482c"]
+albedo_texture = ExtResource("1_1vwsy")
+
+[node name="3dSpawnable" type="Node3D"]
+script = ExtResource("1_j482c")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_vclfv")
+material = SubResource("StandardMaterial3D_j482c")

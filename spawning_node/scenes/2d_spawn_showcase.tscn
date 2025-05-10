@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://vvnj8q73qfw5"]
+
+[ext_resource type="Script" uid="uid://by8kc88jgffr" path="res://scripts/testing/2d_spawn_test.gd" id="1_lnesd"]
+[ext_resource type="Script" uid="uid://b6imlj70oot64" path="res://scripts/spawn_points/spawn_point_2d.gd" id="2_rra21"]
+[ext_resource type="PackedScene" uid="uid://u0l4bnlwsso0" path="res://scenes/entities/2d_spawnable.tscn" id="3_1s8ft"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2oe4f"]
+
+[node name="2dSpawnShowcase" type="Node2D"]
+script = ExtResource("1_lnesd")
+
+[node name="SpawnPoint2D" type="Node2D" parent="."]
+position = Vector2(151, 97)
+script = ExtResource("2_rra21")
+scene_to_spawn = ExtResource("3_1s8ft")
+metadata/_custom_type_script = "uid://b6imlj70oot64"
+
+[node name="SpawnPointVisual" type="TextureRect" parent="SpawnPoint2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("PlaceholderTexture2D_2oe4f")
